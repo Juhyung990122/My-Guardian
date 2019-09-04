@@ -26,13 +26,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'index.apps.IndexConfig',
     'django.contrib.sites',
-     
-    #allauth
+    'adopt.apps.AdoptConfig',
+
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-
-    #provider 구글 페이스북 카톡 깃허브 등 소셜로그인 제공업체
     'allauth.socialaccount.providers.google',
 ]
 
@@ -51,7 +49,7 @@ ROOT_URLCONF = 'guardian.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'index','adopt' ,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,6 +124,6 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
-
 ACCOUNT_AUTHENTICATED_LOGOUT_REDIRECTS = True
-ACCOUNT_LOGOUT_REDIRECT_URL = "/"
+ACCOUNT_LOGOUT_REDIRECT_URL = "/" 
+ACCOUNT_DEFAULT_HTTP_PROTOCOL='https'
