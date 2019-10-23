@@ -31,7 +31,7 @@ numpy==1.16.2
 oauthlib==3.1.0
 pathspec==0.5.9
 phonenumbers==8.10.14
-Pillow==6.1.0
+Pillow==6.2.0
 psycopg2-binary==2.8.3
 PyJWT==1.7.1
 pyparsing==2.3.1
