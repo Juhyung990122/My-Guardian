@@ -27,14 +27,15 @@ INSTALLED_APPS = [
     'index.apps.IndexConfig',
     'django.contrib.sites',
     'adopt.apps.AdoptConfig',
-
+    'rest_framework',
+    
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+   
     #소셜로그인 제공업체
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.naver',
-    
 ]
 
 MIDDLEWARE = [
@@ -131,3 +132,12 @@ ACCOUNT_AUTHENTICATED_LOGOUT_REDIRECTS = True
 ACCOUNT_LOGOUT_REDIRECT_URL = "/" 
 
 SOCIALACCOUNT_EMAIL_VERIFICATION = 'none' #or smtp
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+
+
