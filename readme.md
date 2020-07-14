@@ -1,30 +1,37 @@
-# 집사할래?
+# 집사할래?(My-Guardian)
+Would you be my guardian?
 
-- Would you be my guardian?
-- 올바른 강아지 입양 서비스
+## Intro
+ - 신뢰도 높고 올바른 반려동물 입/분양 앱서비스입니다.
 
-# 개발자
+**기획배경 :** 
+1. 다수의 예비반려인이 반려동물에 대한 올바른 정보를 접하기 어려움
+2. 반려동물 분양자는 입양자를 신뢰하기 어려움
+3. 강아지공장, 펫샵과 같은 불법적인 분양창구 다수 활성화
+
+**서비스 플로우 :** 
+1. 퀴즈를 통해 예비 반려동물 양육애 필요한 지식을 테스트한다.<br>
+   해당 퀴즈의 일정 점수를 넘겨야 어플내 기능을 사용할 수 있다.(분양자는 글 작성기능 활성화, 입양자는 입양신청 활성화)
+2. 입양페이지는 가정견입양, 보호소입양으로 나뉜다.
+3. 입양할 반려견을 선택한다.<br>
+   이름, 나이, 성별, 접종여부, 중성화 수술여부등 기본정보를 확인할 수 있다.
+4. 입양신청 선택시 분양자(작성자)에게 알림이 전송된다.
+5. 오프라인 미팅 장소와 시간을 조율한다.
+6. 관계자가 주선하는 오프라인 미팅을 통해 입양을 진행한다.
+   <br>미팅에서는 계약서 작성/보증금 등의 사항을 처리한다.
+
+**기대효과:**
+1. 퀴즈점수 교환을 통해 상호간의 신뢰도 상승
+2. 제3자가 주선하는 오프라인 미팅을 통해 안심 입/분양 가능
+3. 가정/보호소 분양과 같은 합법적 입양창구 활성화 ->  올바른 입양문화 정착에 이바지
+
+## Developer
 
 - Guinness
 - TaeBbong
 
-# 앱 구조
+## Tech Stack
 
-- index(/)
-    - /
-    - /recommend
-    - /register
-    - /login
-    - /logout
-    - /mypage
-    - /mypage/edit
-    - /mypage/test
-
-- adopt(/adopt)
-    - /house
-    - /house/{post_id}
-    - /house/{post_id}/apply
-    - /shelter
-    - /shelter/{post_id}
-    - /shelter/{post_id}/apply
+Back-end : DRF(Django Rest Framework)<br>
+Front-end : Flutter
 
