@@ -17,7 +17,7 @@ Would you be my guardian?
 
 ## Developer
 
-- Guinness
+- Summer
 - TaeBbong
 
 ## Tech Stack
